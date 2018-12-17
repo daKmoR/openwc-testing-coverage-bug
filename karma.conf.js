@@ -11,5 +11,19 @@ module.exports = (config) => {
       // allows running single tests with the --grep flag
       config.grep ? config.grep : 'test/**/*.test.js',
     ],
+
+    webpack: {
+      ...baseConfig.webpack,
+      optimization: {
+        splitChunks: {
+          cacheGroups: {
+            commons: {
+              chunks: 'all',
+            },
+          },
+        },
+      },
+    },
+
   });
 };

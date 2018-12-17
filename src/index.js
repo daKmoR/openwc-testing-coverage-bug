@@ -1,5 +1,7 @@
-export default async function(name) {
-  const who = await import('./who')
+// import who from './who';
 
-  return who(name)
+export default async function(name) {
+  const who = await import('./who');
+
+  return who.default(name);
 }

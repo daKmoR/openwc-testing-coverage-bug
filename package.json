@@ -4,9 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "karma start"
+    "test": "karma start",
+    "test:watch": "karma start --auto-watch=true --single-run=false"
   },
   "devDependencies": {
+    "@open-wc/testing": "^0.7.1",
     "@open-wc/testing-karma": "^0.3.0"
+  },
+  "dependencies": {
+    "lit-html": "^0.14.0"
   }
 }

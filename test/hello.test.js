@@ -4,9 +4,9 @@ import hello from '../src'
 describe('hello', () => {
   it('should hello world', async () => {
     // given
-    const result = hello('world')
+    const result = await hello('world');
 
     // then
-    expect(result).to.be('Hello world')
+    expect(result).to.equal('Hello world');
   })
 })
