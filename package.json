@@ -1,0 +1,12 @@
+{
+  "name": "dynamic-open-wc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "karma start"
+  },
+  "devDependencies": {
+    "@open-wc/testing-karma": "^0.3.0"
+  }
+}
